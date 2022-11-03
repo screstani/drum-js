@@ -98,7 +98,7 @@ body {
         left: 133px;
     }
 
-    .key-crash {
+    .key.crash {
         top: 80px;
         left: 75px;
     }
@@ -124,10 +124,10 @@ body {
 
     .key-map-wrapper {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         height: 700px;
-        background: #111;
+        background: #5a3f40;
         width: 250px;
         z-index: 3;
     }
@@ -140,7 +140,7 @@ body {
         padding-bottom: 20px;
     }
 
-    .key-map.list {
+    .key-map-list {
         list-style: none;
         color: #fff;
         text-align: left;
