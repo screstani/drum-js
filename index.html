@@ -56,34 +56,34 @@
                     <img id="hihat-top" class="hihat-top-cymbal"
                     src="img/hihat-top.png" 
                     alt="Hi Hat cymbal" >
-                    <div data-key="74" class="key snare">
+                    <div data-key="74" class="key snare" onclick="playAudio(74)">
                         <kbd>J</kbd>
                     </div>
-                    <div data-key="66" class="key kick">
+                    <div data-key="66" class="key kick" onclick="playAudio(66)">
                         <kbd>B</kbd>
                     </div>
-                    <div data-key="86" class="key kick2">
+                    <div data-key="86" class="key kick2" onclick="playAudio(86)">
                         <kbd>V</kbd>
                     </div>
-                    <div data-key="72" class="key tom-high">
+                    <div data-key="72" class="key tom-high" onclick="playAudio(72)">
                         <kbd>H</kbd>
                     </div>
-                    <div data-key="71" class="key tom-mid">
+                    <div data-key="71" class="key tom-mid" onclick="playAudio(71)">
                         <kbd>G</kbd>
                     </div>
-                    <div data-key="70" class="key tom-low">
+                    <div data-key="70" class="key tom-low" onclick="playAudio(70)">
                         <kbd>F</kbd>
                     </div>
-                    <div data-key="69" class="key crash">
+                    <div data-key="69" class="key crash" onclick="playAudio(69)">
                         <kbd>E</kbd>
                     </div>
-                    <div data-key="82" class="key ride">
+                    <div data-key="82" class="key ride" onclick="playAudio(82)">
                         <kbd>R</kbd>
                     </div>
-                    <div data-key="73" class="key hihat-open">
+                    <div data-key="73" class="key hihat-open" onclick="playAudio(73)">
                         <kbd>I</kbd>
                     </div>
-                    <div data-key="75" class="key hihat-close">
+                    <div data-key="75" class="key hihat-close" onclick="playAudio(75)">
                         <kbd>K</kbd>
                     </div>
                     <img class="drum-kit"
@@ -92,36 +92,41 @@
                 </div>
             </section>
         </main>
-        <audio data-key="74" 
+        <audio id="74" data-key="74" 
         src="sounds/src_01-javascript-drum-kit_sounds_snare.wav">
         </audio>
-        <audio data-key="66" 
+        <audio id="66" data-key="66" 
         src="sounds/src_01-javascript-drum-kit_sounds_kick.wav">
         </audio>
-        <audio data-key="86" 
+        <audio id="86" data-key="86" 
         src="sounds/src_01-javascript-drum-kit_sounds_kick 1.wav">
         </audio>
-        <audio data-key="72" 
+        <audio id="72" data-key="72" 
         src="sounds/src_01-javascript-drum-kit_sounds_tom-high.wav">
         </audio>
-        <audio data-key="71" 
+        <audio id="71" data-key="71" 
         src="sounds/src_01-javascript-drum-kit_sounds_tom-mid.wav">
         </audio>
-        <audio data-key="70" 
+        <audio id="70" data-key="70" 
         src="sounds/src_01-javascript-drum-kit_sounds_tom-low.wav">
         </audio>
-        <audio data-key="69" 
+        <audio id="69" data-key="69" 
         src="sounds/src_01-javascript-drum-kit_sounds_crash.wav">
         </audio>
-        <audio data-key="82" 
+        <audio id="82" data-key="82" 
         src="sounds/src_01-javascript-drum-kit_sounds_ride.wav">
         </audio>
-        <audio data-key="73" 
+        <audio id="73" data-key="73" 
         src="sounds/src_01-javascript-drum-kit_sounds_hihat-open.wav">
         </audio>
-        <audio data-key="75" 
+        <audio id="75" data-key="75" 
         src="sounds/src_01-javascript-drum-kit_sounds_hihat-close.wav">
         </audio>
+        <script>
+            function playAudio(n){
+                document.getElementById(n).play();
+            }
+        </script>
         <script src="script.js"></script>
     </body>
 </html>

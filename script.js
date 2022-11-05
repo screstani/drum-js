@@ -62,4 +62,5 @@
     hiHatTop.addEventListener('transitionend', removeHiHatTopTransition);
 
     window.addEventListener('keydown', playSound);
+    
 }
