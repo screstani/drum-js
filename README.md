@@ -6,3 +6,6 @@ https://user-images.githubusercontent.com/68524965/200058265-6c514071-a37a-494d-
 This is a simple example of using **JavaScript** to do some back-end development.
 
 It was done in order to exercise some skills, without the assistance of libraries or frameworks.
+
+I find it hard to implement the response with the mouse click, ending up with a transitory solution. 
+This issue will be addressed in the next available version.
